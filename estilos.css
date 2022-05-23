@@ -54,6 +54,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     width: 100%;
     text-align: center;
     padding:2rem;
@@ -66,6 +67,7 @@ body{
     border: 1px solid #fff;
     border-radius: 10px;
     
+    
 
 }
 
@@ -74,6 +76,7 @@ body{
 .secciones-oculto{
     visibility: hidden;
     position: fixed;
+    overflow-y: auto;
     top: 0;
     right:100%;
     display: flex;
@@ -99,7 +102,7 @@ body{
     width: 100%;
     z-index: 950;
     background-color: #444;
-    opacity: 0.9;
+    opacity: 0.97;
     height: 100vh;
     
     
@@ -120,9 +123,7 @@ body{
  }
  
 
- .s1{
-   margin-top:50px;
- }
+ 
 
     
 
@@ -238,8 +239,7 @@ body{
 
   .clock-active{        
     width: 400px;
-    height: 50px;
-    margin: auto;
+    height: 50px;    
     margin-top: 10px;
     padding: 2px;
   }

@@ -52,8 +52,8 @@ export default function userDeviceInfo(id){
         <li>Browser: <b>${isBrowser.any()}</b> <li/>
     <ul/>
     `
-    if(isBrowser.chrome()){
-        $id.innerHTML += `<p>Aqui voy a agregar la imagen de cada browser</p>`
-    }
+    // if(isBrowser.chrome()){
+    //     $id.innerHTML += `<p>Aqui voy a agregar la imagen de cada browser</p>`
+    // }
 
 }

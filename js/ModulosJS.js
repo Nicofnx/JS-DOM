@@ -10,6 +10,7 @@ import responsiveTester from "./ResponsiveTest/responsive_test.js"
 import userDeviceInfo from "./Deteccion_dispositivos/deteccion_dispositivos.js"
 import networkStatus from "./DeteccionRed/deteccion_red.js";
 import webCam from "./DeteccionWebcam/deteccion_webcam.js";
+import getGeolocation from "./Geolocalizacion/geolocalizacion.js";
 
 const d = document;
 
@@ -24,8 +25,8 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     responsiveMedia(
         "youtube",
         "(min-width: 1024px)",
-        `<a href="https://www.youtube.com/watch?v=6IwUl-4pAzc&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=91">Link al video</a>`,
-        `<iframe width="560" height="315" src="https://www.youtube.com/embed/6IwUl-4pAzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        `<a href="https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=1">Link al video</a>`,
+        `<iframe width="560" height="315" src="https://www.youtube.com/embed/2SetvwBV-SU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     );
     responsiveMedia(
         "gmaps",
@@ -40,6 +41,9 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     )
     webCam(
         "webcam"
+    )
+    getGeolocation(
+        "geolocation"
     )
     
     
